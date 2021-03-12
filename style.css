@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+#container {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #f0e1b9ff,
+    #fcf6f5ff,
+    #fcf6f5ff,
+    #fcf6f5ff,
+    #f0e1b9ff
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 15px;
+  color: #cbb446;
+}
+
+.arrow {
+  height: 100%;
+  width: 30px;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+
+.arrow:active {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+.arrow:hover {
+  opacity: 1;
+  background-color: #eee;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+#right-arrow {
+  transform: scaleX(-1);
+}
+
+#photo-viewer {
+  height: 500px;
+  width: fit-content;
+  /* background-color: white; */
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+#thumbnails {
+  background-color: transparent;
+  margin-top: 30px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  width: fit-content;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.photos {
+  height: 100%;
+  width: auto;
+  flex-grow: 1;
+  border: none;
+}
+
+.thumb-pics {
+  align-self: center;
+  height: 90%;
+  width: auto;
+  margin: 5px;
+  border: 5px solid #fff;
+  box-shadow: 0 15px 8px -10px #333;
+}
+
+.thumb-pics:hover {
+  height: 80px;
+  /* box-shadow: 0 15px 8px -10px #666; */
+  box-shadow: 0 23px 10px -20px #666;
+}
+
+#inactive-pic {
+  align-self: center;
+  height: 63px;
+  width: auto;
+  margin: 5px;
+  border: 5px solid #fff;
+  box-shadow: 0 15px 8px -10px #333;
+}
+
+#active-pic {
+  height: 80px;
+  /* box-shadow: 0 15px 8px -10px #666; */
+  box-shadow: 0 23px 10px -20px #666;
+}
+
+#gray-container {
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  text-align: justify;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#pic-title {
+  font-size: 20px;
+  padding: 15px 25px 5px 25px;
+}
+
+#pic-desc {
+  font-size: 15px;
+  padding: 5px 25px 15px 25px;
+}
